@@ -18,6 +18,6 @@ export const BackButton = styled.TouchableOpacity`
 `;
 
 export const BackIcon = styled(CaretLeft).attrs(({ theme }) => ({
-  size: 3,
+  size: 30,
   color: theme.COLORS.WHITE,
 }))``;

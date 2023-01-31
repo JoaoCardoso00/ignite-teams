@@ -1,4 +1,4 @@
-import { Groups } from "@screens/Groups";
+import { NewGroup } from "@screens/NewGroup";
 import { ThemeProvider } from "styled-components";
 import theme from "@theme/index";
 import { useFonts } from "expo-font";
@@ -13,7 +13,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar barStyle="light-content" translucent />
-      {fontsLoaded ? <Groups /> : <Loading />}
+      {fontsLoaded ? <NewGroup /> : <Loading />}
     </ThemeProvider>
   );
 }
