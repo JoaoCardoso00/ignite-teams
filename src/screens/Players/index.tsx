@@ -1,4 +1,5 @@
 import { FlatList } from "react-native";
+import { PlayerCard } from "@components/PlayerCard";
 import { ButtonIcon } from "@components/ButtonIcon";
 import { Header } from "@components/Header";
 import { Filter } from "@components/Filter";
@@ -41,6 +42,14 @@ export function Players() {
         />
         <NumberOfPlayers>{playersCount}</NumberOfPlayers>
       </HeaderList>
+
+      <FlatList
+        data={players}
+        keyExtractor={(item) => item}
+        renderItem={({ item }) => (
+          <PlayerCard name={item} onRemove={() => {}} />
+        )}
+      />
     </Container>
   );
 }
