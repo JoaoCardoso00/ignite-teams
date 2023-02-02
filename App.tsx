@@ -4,6 +4,7 @@ import theme from "@theme/index";
 import { useFonts } from "expo-font";
 import { Loading } from "@components/Loading";
 import { StatusBar } from "react-native";
+import { Routes } from "@routes/index";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -13,7 +14,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar barStyle="light-content" translucent />
-      {fontsLoaded ? <Players /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </ThemeProvider>
   );
 }
