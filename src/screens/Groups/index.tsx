@@ -10,6 +10,9 @@ import { Button } from "@components/Button";
 export function Groups() {
   const [groups, setGroups] = useState<string[]>(["Galerinha do mal 😈"]);
 
+  function handleNewGroup() {
+  }
+
   return (
     <Container>
       <Header />
@@ -23,7 +26,7 @@ export function Groups() {
         ListEmptyComponent={<ListEmpty message="Nenhuma turma encontrada" />}
       />
 
-      <Button title="Criar turma" />
+      <Button title="Criar turma" onPress={handleNewGroup} />
     </Container>
   );
 }
