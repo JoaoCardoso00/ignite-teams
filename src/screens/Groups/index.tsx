@@ -17,10 +17,6 @@ export function Groups() {
 
     navigation.navigate("NewGroup")
 
-
-
-
-
   }
 
   return (
